@@ -30,6 +30,26 @@ public class GESRectangleShape extends GESDrawableEntity {
         this.height = height;
     }
 
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public Color getBorderColor() {
+        return borderColor;
+    }
+
+    public Color getBackgroundColor() {
+        return backgroundColor;
+    }
+
+    public int getBorderSize() {
+        return borderSize;
+    }
+
     public void setBackgroundColor(Color backgroundColor) {
         this.backgroundColor = backgroundColor;
     }

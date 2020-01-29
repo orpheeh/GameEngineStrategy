@@ -36,6 +36,22 @@ public class GESCircleShape extends GESDrawableEntity {
         this.borderSize = borderSize;
     }
 
+    public Color getBackgroundColor() {
+        return backgroundColor;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public int getBorderSize() {
+        return borderSize;
+    }
+
+    public Color getBorderColor() {
+        return borderColor;
+    }
+
     @Override
     public void onDraw(Graphics2D g2d) {
         g2d.setColor(backgroundColor);

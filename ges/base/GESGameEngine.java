@@ -64,6 +64,10 @@ public abstract class GESGameEngine implements Runnable {
         this.window.setWindowTitle(gameName);
     }
 
+    protected Thread getGameThread(){
+        return gameThread;
+    }
+
     public void startGameEngine() {
         initialization();
 
@@ -85,6 +89,18 @@ public abstract class GESGameEngine implements Runnable {
                 onWindowClosing();
             }
         });
+    }
+
+    public int getWindowWidth() {
+        return windowWidth;
+    }
+
+    public int getWindowHeight() {
+        return windowHeight;
+    }
+
+    public String getGameName() {
+        return gameName;
     }
 
     @Override
